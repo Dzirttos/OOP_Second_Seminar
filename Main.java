@@ -9,13 +9,18 @@ public class Main {
     System.out.print("\033[H\033[J");
 
     Aquarium aquarium = new Aquarium();
-    aquarium.addList(new Orca("Spot"))
-        .addList(new Turtle("Speedy"));
+    aquarium.setCafe(new Cafe());
+    aquarium.addList(new Orca("Spoty"))
+        .addList(new Turtle("Speedy"))
+        .addList(new Shark("Teethy"))
+        .addList(new Stingray("Stingy"))
+        .addList(new Seal("Fluffy"))
+        .addList(new Crocodile("Skinny"));
 
     for (var item : aquarium.getListAquaInhabitants()) {
       System.out.println(item);
     }
-    for (var item : aquarium.getListAquaInhabitants()) {
+    for (var item : aquarium.getFeedables()) {
       System.out.println(item.food());
     }
   }

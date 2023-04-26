@@ -1,4 +1,4 @@
-public class Orca extends Mammal {
+public class Orca extends Mammal implements Swimmable{
 
     public Orca(String name) {
         super(name);
@@ -12,5 +12,10 @@ public class Orca extends Mammal {
     @Override
     public String toString() {
         return String.format("Orca, %s", super.toString());
+    }
+
+    @Override
+    public int swimmSpeed() {
+        return 56;
     }
 }
