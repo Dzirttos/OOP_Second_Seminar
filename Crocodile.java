@@ -21,7 +21,7 @@ public class Crocodile extends Reptiles implements Swimmable, LandWalkable {
 
     @Override
     public int runSpeed() {
-        return 20;
+        return 25;
     }
 
 }
