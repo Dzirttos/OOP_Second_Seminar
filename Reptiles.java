@@ -1,4 +1,4 @@
-public abstract class Reptiles extends AuqaInhabitants {
+public abstract class Reptiles extends AquaInhabitants {
 
     public Reptiles(String name) {
         super(name);
